@@ -9,18 +9,19 @@ It consists of:
 - **A Switch (`Switch`)** that implements WRR scheduling.
 - **A Server (`Server`)** that receives and processes packets.
 
-### 🔧 Features
+###  Features
 - Clients generate **Poisson-distributed traffic**.
 - Packets are scheduled based on **WRR weights**.
 - The switch ensures **channel availability before transmission**.
 - Transmission is queued properly, **avoiding "Channel is busy" errors**.
 
-### 🏗 How to Use
+###  How to Use
 1. Copy these files into a new OMNeT++ project (`WRRProject`).
 2. Open the OMNeT++ IDE, **Build** the project.
 3. **Run** the simulation with `omnetpp.ini`.
 4. Adjust **weights, datarates, queue size** in `omnetpp.ini`.
 
-### 📊 Observing Results
+###  Observing Results
 - The switch logs **queue lengths** and **packet drops**.
 - The server records **received packets** and **latency**.
+
